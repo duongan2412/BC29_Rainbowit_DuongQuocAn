@@ -1,6 +1,253 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-  }
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-  
+/* Header */
+.navbar-brand .navbar__logo {
+  max-height: 60px;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: #FD4766;
+}
+
+.navbar .header__btn{
+  margin-left: 100px;
+}
+
+.navbar .header__btn button {
+  padding: 20px 50px;
+  color: rgba(255, 255, 255, 0.9);
+  background-color: transparent;
+  text-transform: uppercase;
+  font-size: clamp(7px, 5vw, 15px); 
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important ;
+}
+
+.navbar .header__btn:hover button {
+  background-color: #FD4766 !important;
+}
+
+header {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+/* End Header */
+
+/* Carousel */
+.carousel-inner .carousel-item.item1 {
+  background: url("./../img/bg-image-22.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-inner .carousel-item.item2 {
+  background: url("./../img/bg-image-23.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-inner .carousel-item.item3 {
+  background: url("./../img/bg-image-24.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-inner .carousel-item.item4 {
+  background: url("./../img/bg-image-20.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.carousel-inner .carousel-item{
+  height: 900px;
+}
+
+.carousel-item .carousel-caption h3 {
+    font-size: clamp(30px, 5vw, 200px) ; 
+    font-weight: 900;
+}
+
+.carousel-item .carousel-caption p {
+  font-size: clamp(2.5px, 2.5vw, 20px) ; 
+  font-weight: 200;
+  padding: 0 200px;
+}
+
+.carousel-item .carousel-caption button {
+  padding: 20px 50px;
+  color: white;
+  background-color: #FD4766;
+  text-transform: uppercase;
+  font-size: clamp(7px, 5vw, 15px); 
+  font-weight: bold;
+  border-radius: 30px;
+  border: 1px solid #FD4766 !important ;
+  transition: all 0.5s;
+}
+
+.carousel-item .carousel-caption button:hover {
+  color: #FD4766;
+  background-color: transparent;
+}
+
+.carousel-item .carousel-caption {
+  top: 55%;
+  transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  margin-left: 20px;
+  border: 1px solid white;
+  transition: all 0.5s;
+}
+
+.carousel-indicators li.active {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #FD4766;
+  background-color: transparent;
+}
+
+/* End Carousel */
+
+/* Services */
+#services {
+  padding-bottom: 50px;
+}
+
+.services__title {
+  padding: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.services__title p:first-of-type {
+  font-size: clamp(10px, 2.5vw, 20px) ;
+  background: -webkit-linear-gradient(120deg, #FD4766, #7644FF, #1C99FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.services__title h1 {
+  font-size: 45px;
+}
+
+.services__list .services__item {
+  padding: 15px;
+  transition: all 0.5s;
+}
+
+.services__list .services__item:hover {
+  transform: translateY(-5px);
+}
+
+.services__item .item__content {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, .1);
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 20px;
+}
+
+.services__list .row .services__item i,
+.services__list .row .services__item h3{
+  margin-bottom: 20px;
+}
+
+.services__list .row .services__item h3{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+/* End Services */
+
+/* Project */
+#project {
+  padding-bottom: 50px;
+  background-color: #f8f9fb;
+}
+
+.project__title {
+  padding: 50px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.project__title p:first-of-type {
+  font-size: clamp(10px, 2.5vw, 20px) ;
+  background: -webkit-linear-gradient(120deg, #FD4766, #7644FF, #1C99FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.project__title h1 {
+  font-size: 45px;
+}
+
+.project__item .item__content{
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  /* z-index: 2; */
+  border: 1px solid black;
+  background: url("./../img/portfolio-4.jpg") no-repeat center center;
+  background-size: cover;
+  height: 500px;
+  transition: all 1.5s;
+  overflow: hidden;
+}
+
+.project__item .item__content::after {
+  content: "";
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.item__content .content__text {
+  text-align: center;
+  color: white;
+  position: absolute;
+  z-index: 1;
+  bottom: -40px;
+  transition: all 0.5s;
+}
+
+.item__content .content__text p:last-of-type{
+  opacity: 0;
+}
+
+.item__content:hover {
+  background-size: 120%;
+}
+
+.item__content:hover .content__text {
+  bottom: 0;
+}
+
+.item__content:hover p:last-of-type {
+  bottom: 0;
+  opacity: 1;
+}
+
+/* End Project */
