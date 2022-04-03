@@ -207,12 +207,20 @@ header {
   border-radius: 10px;
   /* z-index: 2; */
   border: 1px solid black;
+  /* background: url("./../img/portfolio-4.jpg") no-repeat center center;
+  background-size: auto;
+  height: 500px; */
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.item__content .content__img {
   background: url("./../img/portfolio-4.jpg") no-repeat center center;
   background-size: cover;
   height: 500px;
-  transition: all 1.5s;
-  overflow: hidden;
+  transition: all 1s;
 }
+
 
 .project__item .item__content::after {
   content: "";
@@ -230,15 +238,16 @@ header {
   position: absolute;
   z-index: 1;
   bottom: -40px;
-  transition: all 0.5s;
+  transition: all 1s;
 }
 
 .item__content .content__text p:last-of-type{
   opacity: 0;
 }
 
-.item__content:hover {
-  background-size: 120%;
+.item__content:hover .content__img{
+  /* background-size: 120%; */
+  transform: scale(1.1);
 }
 
 .item__content:hover .content__text {
